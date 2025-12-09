@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stellar Beats - Music Website</title>
+  <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-branding">
+      <div class="branding-content">
+        <div class="logo">
+          <span class="logo-icon">♪</span>
+          <h1>Playlist</h1>
+        </div>
+        <p class="tagline">Stream your favorite Hindi music</p>
+        <div class="features">
+          <div class="feature-item">
+            <span class="feature-icon">🎵</span>
+            <p>Millions of Songs</p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">📻</span>
+            <p>Create Playlists</p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🎧</span>
+            <p>Listen Offline</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="login-form-container">
+      <div class="form-wrapper">
+        <h2>Welcome Back</h2>
+        <p class="form-subtitle">Sign in to your account</p>
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <span class="password-toggle" onclick="togglePassword()">👁</span>
+          </div>
+          <div class="form-group checkbox">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember" class="checkbox-label">Remember me</label>
+          </div>
+          <button type="submit" class="btn-login">Sign In</button>
+        </form>
+        <div class="divider">OR</div>
+        <button class="btn-social google-btn" onclick="loginGoogle()">
+          <span class="social-icon">G</span>
+          Sign in with Google
+        </button>
+        <div class="form-footer">
+          <p>Don't have an account? <a href="#signup">Sign up</a></p>
+          <p><a href="#forgot">Forgot password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="login-script.js"></script>
+</body>
+</html>
